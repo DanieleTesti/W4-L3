@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex card</title>
+    <style>
+      main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 300px;
+        border: 1px solid grey;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        margin: 10px;
+      }
+
+      .descrizione {
+        padding: 10px;
+      }
+
+      article button {
+        background-color: grey;
+        color: white;
+        width: 100%;
+        border: none;
+        padding: 10px;
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .descrizione {
+        display: flex;
+        flex-direction: column; /*rende l'asse y la main axis*/
+        justify-content: space-between;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="descrizione">
+          <h3>lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+            tempore ipsa aspernatur! Ex quia, eaque rem libero magni veritatis
+            dolores quam ullam culpa possimus sed sunt architecto modi beatae
+            vero!
+          </p>
+        </div>
+        <button>Go to page</button>
+      </article>
+
+      <article class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="descrizione">
+          <h3>lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+            tempore ipsa aspernatur! Ex quia, eaque rem libero magni veritatis
+            dolores quam ullam culpa possimus sed sunt architecto modi beatae
+            vero! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Ullam tempore ipsa aspernatur! Ex quia, eaque rem libero magni
+            veritatis dolores quam ullam culpa possimus sed sunt architecto modi
+            beatae vero!
+          </p>
+        </div>
+        <button>Go to page</button>
+      </article>
+
+      <article class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="descrizione">
+          <h3>lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+            tempore ipsa aspernatur! Ex quia, eaque rem libero magni veritatis
+            dolores quam ullam culpa possimus sed sunt architecto modi beatae
+            vero!
+          </p>
+        </div>
+        <button>Go to page</button>
+      </article>
+    </main>
+  </body>
+</html>

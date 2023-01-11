@@ -1,0 +1,78 @@
+header {
+  background-color: rgba(254, 247, 226, 255);
+  margin: 15px;
+  padding: 15px;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+  /* border-radius: 30%; */
+}
+
+.shop {
+  margin-top: 15px;
+  /* width: 150px; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.shop h1,
+.shop img {
+  display: inline;
+}
+
+.shop,
+.facilities,
+.ourHoney,
+.trace,
+.contact {
+  text-align: center;
+  background-color: rgba(255, 223, 127, 255);
+  border-radius: 50px;
+}
+
+.firstLine,
+.secondLine {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.facilities,
+.ourHoney,
+.trace,
+.contact {
+  width: 150px;
+  margin: 5px 0 5px 0;
+}
+
+main > h1 {
+  text-align: center;
+}
+
+.honey1 {
+  background-color: rgba(254, 247, 226, 255);
+}
+
+@media screen and (min-width: 300px) {
+  .honey1 > img {
+    width: 100%;
+  }
+
+  .decription {
+    display: flex;
+  }
+
+  .place {
+    display: flex;
+  }
+
+  .price {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .honey1 > img {
+    width: 50%;
+  }
+}
