@@ -10,7 +10,6 @@ header {
 
 .shop {
   margin-top: 15px;
-  /* width: 150px; */
   align-items: center;
   display: flex;
   justify-content: center;
@@ -49,30 +48,62 @@ main > h1 {
   text-align: center;
 }
 
-.honey1 {
+.honey {
   background-color: rgba(254, 247, 226, 255);
+  margin: 10px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.place > h4 {
+  font-size: large;
+  margin-bottom: 0;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.honey button {
+  background-color: rgba(255, 223, 127, 255);
+  border: none;
+  border-radius: 40%;
+  padding: 10px 20px 10px 20px;
+}
+
+article {
+  background-color: rgba(254, 247, 226, 255);
+  margin: 10px;
 }
 
 @media screen and (min-width: 300px) {
-  .honey1 > img {
+  .honey > img {
     width: 100%;
   }
 
-  .decription {
-    display: flex;
+  main > h2 {
+    margin: 20px;
   }
 
-  .place {
+  /* .decription {
     display: flex;
-  }
+  } */
 
-  .price {
+  /* .place {
     display: flex;
+  } */
+
+  .honey {
+    margin-bottom: 2em;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .honey1 > img {
+  .honey > img {
     width: 50%;
   }
 }
